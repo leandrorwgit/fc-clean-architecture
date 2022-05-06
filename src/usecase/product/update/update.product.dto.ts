@@ -1,6 +1,6 @@
 export interface InputUpdateProductDto {
     id: string;
-    name: string;
+    name?: string;
     price: number;
 }
 
