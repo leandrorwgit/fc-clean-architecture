@@ -6,4 +6,5 @@ export default interface ProductInterface extends Entity {
   get price(): number;
   changeName(name: string): void;
   changePrice(price: number): void;
+  checkNotification(): void;
 }

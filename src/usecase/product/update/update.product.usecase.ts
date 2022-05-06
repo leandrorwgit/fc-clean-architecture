@@ -13,6 +13,7 @@ export default class UpdateProductUseCase {
     const product = await this.productRepository.find(input.id);
     product.changeName(input.name);
     product.changePrice(input.price);    
+    product.checkNotification();
     await this.productRepository.update(product);
 
     return {

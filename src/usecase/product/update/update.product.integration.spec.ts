@@ -53,6 +53,7 @@ describe("Integration test update product use case", () => {
 
       const inputUpdate = {
          id: product.id,
+         name: "",
          price: 200,
       }
 
